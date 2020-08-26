@@ -83,7 +83,7 @@ function! MoonflyShortFilePath()
         if len(l:path) == 0
             return ""
         else
-            return pathshorten(fnamemodify(expand("%:f"), ":~:."))
+            return  (pathshorten(fnamemodify(expand("%:h"), ":~:.")) .. "/" .. expand('%:t'))
         endif
     endif
 endfunction
