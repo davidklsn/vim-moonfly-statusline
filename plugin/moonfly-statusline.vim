@@ -69,7 +69,7 @@ function! MoonflyFugitiveBranch()
     endif
 
     if g:moonflyWithGitBranchCharacter
-        return "☼ " . fugitive#head() . "☼"
+        return " " . fugitive#head() . ""
     else
         return fugitive#statusline()
     endif
