@@ -94,7 +94,7 @@ function! MoonflyPluginsStatus()
     " Obsession plugin.
     if exists("g:loaded_obsession")
         if g:moonflyWithObessionGeometricCharacters
-            let l:status .= ObsessionStatus("● ", "■ ")
+            let l:status .= ObsessionStatus("●  ", "■  ")
         else
             let l:status .= ObsessionStatus("$ ", "S ")
         endif
